@@ -567,10 +567,10 @@ again:
 
 			/* stdClass has no __set_state method, but can be casted to */
 			if (Z_OBJCE_P(struc) == zend_standard_class_def) {
-				smart_str_appendl(buf, "(object) array(\n", 16);
+				smart_str_appendl(buf, "(object) [\n", 11);
 			} else {
 				smart_str_append(buf, Z_OBJCE_P(struc)->name);
-				smart_str_appendl(buf, "::__set_state(array(\n", 21);
+				smart_str_appendl(buf, "::__set_state([\n", 16);
 			}
 
 			if (myht) {
@@ -584,9 +584,9 @@ again:
 				buffer_append_spaces(buf, level - 1);
 			}
 			if (Z_OBJCE_P(struc) == zend_standard_class_def) {
-				smart_str_appendc(buf, ')');
+				smart_str_appendc(buf, ']');
 			} else {
-				smart_str_appendl(buf, "))", 2);
+				smart_str_appendl(buf, "])", 2);
 			}
 
 			break;
