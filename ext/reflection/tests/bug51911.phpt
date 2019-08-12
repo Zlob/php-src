@@ -17,6 +17,6 @@ foreach ($method->getParameters() as $param) {
 
 ?>
 --EXPECT--
-$x : array (
+$x : [
   0 => 1,
-)
+]

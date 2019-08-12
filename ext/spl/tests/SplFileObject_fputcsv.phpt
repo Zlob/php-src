@@ -59,7 +59,7 @@ $file = __DIR__ . '/SplFileObject_fputcsv.csv';
 unlink($file);
 ?>
 --EXPECT--
-$list = array (
+$list = [
   0 => 'aaa,bbb',
   1 => 'aaa,"""bbb"""',
   2 => '"""aaa""","""bbb"""',
@@ -80,8 +80,8 @@ $list = array (
   17 => '"aaa""\\"a""","""bbb"""',
   18 => '"""\\"""","""aaa"""',
   19 => '"""\\"""""",aaa',
-);
-$list = array (
+];
+$list = [
   0 => 'aaa,bbb',
   1 => 'aaa,"bbb"',
   2 => '"aaa","bbb"',
@@ -102,5 +102,5 @@ $list = array (
   17 => 'aaa"\\"a","bbb"',
   18 => '"\\"","aaa"',
   19 => '"\\""",aaa',
-);
+];
 ===DONE===

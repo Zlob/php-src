@@ -22,7 +22,7 @@ foreach ($method->getParameters() as $param) {
 ?>
 --EXPECT--
 $x : 1
-$y : array (
+$y : [
   0 => 12,
-)
+]
 $z : 20
