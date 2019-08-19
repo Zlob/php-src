@@ -50,230 +50,230 @@ foreach($valid_arrays as $key => $arr) {
 *** Output for arrays ***
 
 --Iteration: array() --
-array (
-)
-array (
-)
-string(9) "array (
-)"
+[
+]
+[
+]
+string(3) "[
+]"
 
 
 --Iteration: array(NULL) --
-array (
+[
   0 => NULL,
-)
-array (
+]
+[
   0 => NULL,
-)
-string(22) "array (
+]
+string(16) "[
   0 => NULL,
-)"
+]"
 
 
 --Iteration: array(null) --
-array (
+[
   0 => NULL,
-)
-array (
+]
+[
   0 => NULL,
-)
-string(22) "array (
+]
+string(16) "[
   0 => NULL,
-)"
+]"
 
 
 --Iteration: array(true) --
-array (
+[
   0 => true,
-)
-array (
+]
+[
   0 => true,
-)
-string(22) "array (
+]
+string(16) "[
   0 => true,
-)"
+]"
 
 
 --Iteration: array("") --
-array (
+[
   0 => '',
-)
-array (
+]
+[
   0 => '',
-)
-string(20) "array (
+]
+string(14) "[
   0 => '',
-)"
+]"
 
 
 --Iteration: array('') --
-array (
+[
   0 => '',
-)
-array (
+]
+[
   0 => '',
-)
-string(20) "array (
+]
+string(14) "[
   0 => '',
-)"
+]"
 
 
 --Iteration: array(array(), array()) --
-array (
+[
   0 => 
-  array (
-  ),
+  [
+  ],
   1 => 
-  array (
-  ),
-)
-array (
+  [
+  ],
+]
+[
   0 => 
-  array (
-  ),
+  [
+  ],
   1 => 
-  array (
-  ),
-)
-string(55) "array (
+  [
+  ],
+]
+string(37) "[
   0 => 
-  array (
-  ),
+  [
+  ],
   1 => 
-  array (
-  ),
-)"
+  [
+  ],
+]"
 
 
 --Iteration: array(array(1, 2), array('a', 'b')) --
-array (
+[
   0 => 
-  array (
+  [
     0 => 1,
     1 => 2,
-  ),
+  ],
   1 => 
-  array (
+  [
     0 => 'a',
     1 => 'b',
-  ),
-)
-array (
+  ],
+]
+[
   0 => 
-  array (
+  [
     0 => 1,
     1 => 2,
-  ),
+  ],
   1 => 
-  array (
+  [
     0 => 'a',
     1 => 'b',
-  ),
-)
-string(107) "array (
+  ],
+]
+string(89) "[
   0 => 
-  array (
+  [
     0 => 1,
     1 => 2,
-  ),
+  ],
   1 => 
-  array (
+  [
     0 => 'a',
     1 => 'b',
-  ),
-)"
+  ],
+]"
 
 
 --Iteration: array(1 => 'One') --
-array (
+[
   1 => 'One',
-)
-array (
+]
+[
   1 => 'One',
-)
-string(23) "array (
+]
+string(17) "[
   1 => 'One',
-)"
+]"
 
 
 --Iteration: array("test" => "is_array") --
-array (
+[
   'test' => 'is_array',
-)
-array (
+]
+[
   'test' => 'is_array',
-)
-string(33) "array (
+]
+string(27) "[
   'test' => 'is_array',
-)"
+]"
 
 
 --Iteration: array(0) --
-array (
+[
   0 => 0,
-)
-array (
+]
+[
   0 => 0,
-)
-string(19) "array (
+]
+string(13) "[
   0 => 0,
-)"
+]"
 
 
 --Iteration: array(-1) --
-array (
+[
   0 => -1,
-)
-array (
+]
+[
   0 => -1,
-)
-string(20) "array (
+]
+string(14) "[
   0 => -1,
-)"
+]"
 
 
 --Iteration: array(10.5, 5.6) --
-array (
+[
   0 => 10.5,
   1 => 5.5999999999999996,
-)
-array (
+]
+[
   0 => 10.5,
   1 => 5.5999999999999996,
-)
-string(49) "array (
+]
+string(43) "[
   0 => 10.5,
   1 => 5.5999999999999996,
-)"
+]"
 
 
 --Iteration: array("string", "test") --
-array (
+[
   0 => 'string',
   1 => 'test',
-)
-array (
+]
+[
   0 => 'string',
   1 => 'test',
-)
-string(41) "array (
+]
+string(35) "[
   0 => 'string',
   1 => 'test',
-)"
+]"
 
 
 --Iteration: array('string', 'test') --
-array (
+[
   0 => 'string',
   1 => 'test',
-)
-array (
+]
+[
   0 => 'string',
   1 => 'test',
-)
-string(41) "array (
+]
+string(35) "[
   0 => 'string',
   1 => 'test',
-)"
+]"
 
 ===DONE===

@@ -460,34 +460,34 @@ string(9) "trbala is"
 
 
 
-substr_replace('try this', array (  0 => 'bala ',), 4
+substr_replace('try this', [  0 => 'bala ',], 4
 string(9) "try bala "
 
-substr_replace('try this', array (  0 => 'bala ',), 4
+substr_replace('try this', [  0 => 'bala ',], 4
 string(10) "try bala s"
 
 
 
 
-substr_replace(array (  0 => 'ala portokala',), array (  0 => 'bala ',), array (  0 => 4,)
+substr_replace([  0 => 'ala portokala',], [  0 => 'bala ',], [  0 => 4,]
 array(1) {
   [0]=>
   string(9) "ala bala "
 }
 
-substr_replace(array (  0 => 'ala portokala',), array (  0 => 'bala ',), array (  0 => 4,), array (  0 => 3,))
+substr_replace([  0 => 'ala portokala',], [  0 => 'bala ',], [  0 => 4,], [  0 => 3,])
 array(1) {
   [0]=>
   string(15) "ala bala tokala"
 }
 
-substr_replace(array (  0 => 'ala portokala',), array (  0 => 'bala ',), array (  0 => 4,), array (  0 => 0,))
+substr_replace([  0 => 'ala portokala',], [  0 => 'bala ',], [  0 => 4,], [  0 => 0,])
 array(1) {
   [0]=>
   string(18) "ala bala portokala"
 }
 
-substr_replace(array (  0 => 'ala portokala',), array (  0 => 'bala ',), array (  0 => 4,), array (  0 => -2,))
+substr_replace([  0 => 'ala portokala',], [  0 => 'bala ',], [  0 => 4,], [  0 => -2,])
 array(1) {
   [0]=>
   string(11) "ala bala la"
@@ -495,14 +495,14 @@ array(1) {
 
 
 
-substr_replace(array (  0 => 'ala portokala',), 'bala ',4)
+substr_replace([  0 => 'ala portokala',], 'bala ',4)
 array(1) {
   [0]=>
   string(9) "ala bala "
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),4, 3)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],4, 3)
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -511,7 +511,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',4, 3)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',4, 3)
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -519,7 +519,7 @@ array(2) {
   string(10) "try bala s"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),4, 0)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],4, 0)
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -528,7 +528,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',4, 0)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',4, 0)
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -536,7 +536,7 @@ array(2) {
   string(13) "try bala this"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),4, -2)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],4, -2)
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -545,7 +545,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',4, -2)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',4, -2)
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -558,14 +558,14 @@ array(2) {
 
 
 
-substr_replace(array (  0 => 'ala portokala',), 'bala ',array (  0 => 4,))
+substr_replace([  0 => 'ala portokala',], 'bala ',[  0 => 4,])
 array(1) {
   [0]=>
   string(9) "ala bala "
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,), 3)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,], 3)
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -574,7 +574,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,), 3)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,], 3)
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -582,7 +582,7 @@ array(2) {
   string(10) "bala  this"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,), 0)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,], 0)
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -591,7 +591,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,), 0)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,], 0)
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -599,7 +599,7 @@ array(2) {
   string(13) "bala try this"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,), -2)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,], -2)
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -608,7 +608,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,), -2)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,], -2)
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -622,14 +622,14 @@ array(2) {
 
 
 
-substr_replace(array (  0 => 'ala portokala',), 'bala ',array (  0 => 4,  1 => 2,))
+substr_replace([  0 => 'ala portokala',], 'bala ',[  0 => 4,  1 => 2,])
 array(1) {
   [0]=>
   string(9) "ala bala "
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), 3)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], 3)
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -638,7 +638,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), 3)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], 3)
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -646,7 +646,7 @@ array(2) {
   string(10) "trbala his"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), 0)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], 0)
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -655,7 +655,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), 0)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], 0)
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -663,7 +663,7 @@ array(2) {
   string(13) "trbala y this"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), -2)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], -2)
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -672,7 +672,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), -2)
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], -2)
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -686,14 +686,14 @@ array(2) {
 
 
 
-substr_replace(array (  0 => 'ala portokala',), 'bala ',array (  0 => 4,  1 => 2,))
+substr_replace([  0 => 'ala portokala',], 'bala ',[  0 => 4,  1 => 2,])
 array(1) {
   [0]=>
   string(9) "ala bala "
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), array (  0 => 3,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], [  0 => 3,])
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -702,7 +702,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), array (  0 => 3,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], [  0 => 3,])
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -710,7 +710,7 @@ array(2) {
   string(7) "trbala "
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), array (  0 => 0,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], [  0 => 0,])
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -719,7 +719,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), array (  0 => 0,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], [  0 => 0,])
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -727,7 +727,7 @@ array(2) {
   string(7) "trbala "
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), array (  0 => -2,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], [  0 => -2,])
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -736,7 +736,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), array (  0 => -2,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], [  0 => -2,])
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -750,14 +750,14 @@ array(2) {
 
 
 
-substr_replace(array (  0 => 'ala portokala',), 'bala ',array (  0 => 4,  1 => 2,))
+substr_replace([  0 => 'ala portokala',], 'bala ',[  0 => 4,  1 => 2,])
 array(1) {
   [0]=>
   string(9) "ala bala "
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), array (  0 => 3,  1 => 2,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], [  0 => 3,  1 => 2,])
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -766,7 +766,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), array (  0 => 3,  1 => 2,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], [  0 => 3,  1 => 2,])
 array(2) {
   [0]=>
   string(15) "ala bala tokala"
@@ -774,7 +774,7 @@ array(2) {
   string(11) "trbala this"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), array (  0 => 0,  1 => 0,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], [  0 => 0,  1 => 0,])
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -783,7 +783,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), array (  0 => 0,  1 => 0,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], [  0 => 0,  1 => 0,])
 array(2) {
   [0]=>
   string(18) "ala bala portokala"
@@ -791,7 +791,7 @@ array(2) {
   string(13) "trbala y this"
 }
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), array (  0 => 'bala ',),array (  0 => 4,  1 => 2,), array (  0 => -2,  1 => -3,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], [  0 => 'bala ',],[  0 => 4,  1 => 2,], [  0 => -2,  1 => -3,])
 array(2) {
   [0]=>
   string(11) "ala bala la"
@@ -800,7 +800,7 @@ array(2) {
 }
 
 
-substr_replace(array (  0 => 'ala portokala',  1 => 'try this',), 'bala ',array (  0 => 4,  1 => 2,), array (  0 => -2,  1 => -3,))
+substr_replace([  0 => 'ala portokala',  1 => 'try this',], 'bala ',[  0 => 4,  1 => 2,], [  0 => -2,  1 => -3,])
 array(2) {
   [0]=>
   string(11) "ala bala la"

@@ -121,7 +121,7 @@ var_dump(array_udiff_assoc($a, $b, "comp_func_cr"));
 
 ?>
 --EXPECTF--
-$a=array (
+$a=[
   0 => 1,
   'big' => 2,
   1 => 3,
@@ -138,8 +138,8 @@ $a=array (
   12 => 3,
   13 => 3,
   14 => 3,
-);
-$b=array (
+];
+$b=[
   0 => 2,
   1 => 2,
   2 => 3,
@@ -155,11 +155,11 @@ $b=array (
   12 => 3,
   13 => 3,
   14 => 3,
-);
-$c=array (
+];
+$c=[
   0 => -1,
   1 => 1,
-);
+];
 array(2) {
   [2]=>
   int(6)
@@ -178,7 +178,7 @@ array(5) {
   [4]=>
   int(5)
 }
-$a=array (
+$a=[
   'a' => 2,
   'b' => 'some',
   'c' => 'done',
@@ -194,8 +194,8 @@ $a=array (
   95 => 'some',
   'som3' => 'some',
   'want' => 'wanna',
-);
-$b=array (
+];
+$b=[
   'a' => 7,
   7 => 18,
   9 => 13,
@@ -206,11 +206,11 @@ $b=array (
   'goo' => 'foo',
   'f' => 5,
   'z' => 'equal',
-);
-$c=array (
+];
+$c=[
   73 => 'foo',
   95 => 'some',
-);
+];
 Results:
 
 array(5) {
@@ -246,60 +246,60 @@ array(9) {
   string(5) "wanna"
 }
 -=-=-=-=-=-=-=-=- New functionality from 5.0.0 -=-=-=-=-=-=-=-
-$a=array (
+$a=[
   '0.1' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 12,
      'public_member' => 12,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 23,
      'public_member' => 23,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
-$b=array (
+  ]),
+];
+$b=[
   '0.2' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 22,
      'public_member' => 22,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 3,
      'public_member' => 3,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
+  ]),
+];
 var_dump(array_udiff_uassoc($a, $b, "comp_func_cr", "comp_func"));
 array(3) {
   ["0.1"]=>
@@ -324,60 +324,60 @@ array(3) {
     int(23)
   }
 }
-$a=array (
+$a=[
   '0.1' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 12,
      'public_member' => 12,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 23,
      'public_member' => 23,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
-$b=array (
+  ]),
+];
+$b=[
   '0.2' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 22,
      'public_member' => 22,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 3,
      'public_member' => 3,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
+  ]),
+];
 var_dump(array_udiff_uassoc($a, $b, array("cr", "comp_func_cr"), "comp_func"));
 array(3) {
   ["0.1"]=>
@@ -402,60 +402,60 @@ array(3) {
     int(23)
   }
 }
-$a=array (
+$a=[
   '0.1' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 12,
      'public_member' => 12,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 23,
      'public_member' => 23,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
-$b=array (
+  ]),
+];
+$b=[
   '0.2' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 22,
      'public_member' => 22,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 3,
      'public_member' => 3,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
+  ]),
+];
 var_dump(array_udiff($a, $b, "comp_func_cr"));
 array(2) {
   ["0.5"]=>
@@ -473,60 +473,60 @@ array(2) {
     int(23)
   }
 }
-$a=array (
+$a=[
   '0.1' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 12,
      'public_member' => 12,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 23,
      'public_member' => 23,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
-$b=array (
+  ]),
+];
+$b=[
   '0.2' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 9,
      'public_member' => 9,
-  )),
+  ]),
   '0.5' => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 22,
      'public_member' => 22,
-  )),
+  ]),
   0 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 3,
      'public_member' => 3,
-  )),
+  ]),
   1 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => 4,
      'public_member' => 4,
-  )),
+  ]),
   2 => 
-  cr::__set_state(array(
+  cr::__set_state([
      'priv_member' => -15,
      'public_member' => -15,
-  )),
-);
+  ]),
+];
 var_dump(array_udiff_assoc($a, $b, "comp_func_cr"));
 array(3) {
   ["0.1"]=>

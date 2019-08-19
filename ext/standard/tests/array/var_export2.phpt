@@ -6,8 +6,8 @@ $a = array ("\0" => 'null', "" => 'empty', "0" => 'nul');
 var_export($a);
 ?>
 --EXPECT--
-array (
+[
   '' . "\0" . '' => 'null',
   '' => 'empty',
   0 => 'nul',
-)
+]

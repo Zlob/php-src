@@ -79,7 +79,7 @@ bool(false)
 string(5) "ENV_2"
 
 Check that arguments are correctly passed through:
-array (
+[
   0 => 'Simple',
   1 => 'White space	tab
 newline',
@@ -88,4 +88,4 @@ newline',
   4 => '\\Back\\slash\\',
   5 => '\\\\Back\\\\slash\\\\',
   6 => '\\"Qu\\"ot\\"ed\\"',
-)
+]

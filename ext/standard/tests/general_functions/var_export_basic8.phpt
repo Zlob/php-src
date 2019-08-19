@@ -30,42 +30,42 @@ var_export($b);
 ===DONE===
 --EXPECT--
 -- Var export on a simple  object --
-(object) array(
+(object) [
    'a' => 1,
    'b' => 
-  array (
+  [
     'k' => 2,
-  ),
+  ],
    'x' => 
-  (object) array(
+  (object) [
      'p' => '22',
-  ),
-)
+  ],
+]
 
 -- Var export on an simple array --
-array (
+[
   0 => 1,
   1 => 2,
   2 => 3,
   3 => 4,
-)
+]
 
 -- Var export on an nested array --
-array (
+[
   'foo' => 
-  array (
+  [
     'one' => 'first',
-  ),
+  ],
   'bar' => 
-  (object) array(
+  (object) [
      'a' => 1,
      'b' => 
-    array (
+    [
       'k' => 2,
-    ),
+    ],
      'x' => 
-    (object) array(
+    (object) [
        'p' => '22',
-    ),
-  ),
-)===DONE===
+    ],
+  ],
+]===DONE===

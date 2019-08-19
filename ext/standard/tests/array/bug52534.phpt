@@ -9,6 +9,6 @@ var_export($aArray);
 
 ?>
 --EXPECT--
-array (
+[
   -1 => 'Hello',
-)
+]

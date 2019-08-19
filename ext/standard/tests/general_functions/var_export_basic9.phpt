@@ -6,6 +6,6 @@ Bug #55082: var_export() doesn't escape properties properly
 	$x->{'\'\\'} = 7;
 	echo var_export($x);
 --EXPECT--
-(object) array(
+(object) [
    '\'\\' => 7,
-)
+]
